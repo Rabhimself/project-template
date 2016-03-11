@@ -1,6 +1,3 @@
-// Creates the database
-// Missing relationships at this point
-
 CREATE
 
 (:CONSTITUENCY{name:"Carlow–Kilkenny",population:"145,659",seats:"5"}),
@@ -91,7 +88,7 @@ CREATE
 
 (:PARTY {name:"Labour Party", leader:"Joan Burton",first_pref_votes:"140,898",first_pref_votes_per:"6.6",swing:"-12.8",candidates:"36",elected_2011:"37",outgoing:"33",elected:"7",change:"-30",seats_per:"4.4"}),
 
-(:PARTY {name:"AAA–PBP", leader:"None",first_pref_votes:"84,168",first_pref_votes_per:"3.9",swing:"1.7",candidates:"31",elected_2011:"4",outgoing:"4",elected:"6",change:"-2",seats_per:"3.8"}),
+(:PARTY {name:"Anti-Austerity Alliance–People Before Profit", leader:"None",first_pref_votes:"84,168",first_pref_votes_per:"3.9",swing:"1.7",candidates:"31",elected_2011:"4",outgoing:"4",elected:"6",change:"-2",seats_per:"3.8"}),
 
 (:PARTY {name:"Independents 4 Change", leader:"None",first_pref_votes:"31,365",first_pref_votes_per:"1.5",swing:"1.5",candidates:"5",elected_2011:"N/A",outgoing:"4",elected:"4",change:"4",seats_per:"2.5"}),
 
@@ -101,7 +98,7 @@ CREATE
 
 (:PARTY {name:"Renua Ireland", leader:"Lucinda Creighton",first_pref_votes:"46,552",first_pref_votes_per:"2.2",swing:"2.2",candidates:"26",elected_2011:"N/A",outgoing:"3",elected:"0",change:"0",seats_per:"0"}),
 
-(:PARTY {name:"Direct Democracy", leader:"Pat Greene",first_pref_votes:"6,481",first_pref_votes_per:"0.3",swing:"0.3",candidates:"19",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Direct Democracy Ireland", leader:"Pat Greene",first_pref_votes:"6,481",first_pref_votes_per:"0.3",swing:"0.3",candidates:"19",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
 
 (:PARTY {name:"Workers' Party", leader:"Michael Donnelly",first_pref_votes:"3,242",first_pref_votes_per:"0.2",swing:"<0.05",candidates:"5",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
 
@@ -111,7 +108,7 @@ CREATE
 
 (:PARTY {name:"Irish Democratic Party", leader:"Ken Smollen",first_pref_votes:"971",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
 
-(:PARTY {name:"Communist Party", leader:"Lynda Walker",first_pref_votes:"185",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Communist Party of Ireland", leader:"Lynda Walker",first_pref_votes:"185",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
 
 (:PARTY {name:"Identity Ireland", leader:"Peter O'Loughlin",first_pref_votes:"183",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
 
@@ -119,87 +116,85 @@ CREATE
 
 (:PARTY {name:"Independent", leader:"—",first_pref_votes:"249,285",first_pref_votes_per:"11.7",swing:"1.3",candidates:"136",elected_2011:"14",outgoing:"10",elected:"13",change:"-1",seats_per:"8.2"}),
 
-(:PARTY {name:"Ceann Comhairle", leader:"Seán Barrett",first_pref_votes:"N/A",first_pref_votes_per:"N/A",swing:"N/A",candidates:"1",elected_2011:"1",outgoing:"1",elected:"1",change:"0",seats_per:"0.6"}),
+(:CANDIDATE :OUTGOING{constituency: "Carlow–Kilkenny", party: "Labour Party",name:"Ann Phelan ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Carlow–Kilkenny", party: "Labour",name:"Ann Phelan ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Clare", party: "Labour Party",name:"Michael McNamara  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Clare", party: "Labour",name:"Michael McNamara  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Cork East", party: "Labour Party",name:"Sean Sherlock   ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Cork East", party: "Labour",name:"Sean Sherlock   ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Cork North–Central", party: "Labour Party" ,name:"Kathleen Lynch  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Cork North–Central", party: "Labour" ,name:"Kathleen Lynch  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Cork South–Central", party: "Labour Party",name:"Ciarán Lynch ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Cork South–Central", party: "Labour",name:"Ciarán Lynch ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Cork South–West", party: "Labour Party",name:"Michael McCarthy  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Cork South–West", party: "Labour",name:"Michael McCarthy  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Central", party: "Labour Party",name:"Joe Costello ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Central", party: "Labour",name:"Joe Costello ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Mid–West", party: "Labour Party",name:"Joanna Tuffy  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Mid–West", party: "Labour",name:"Joanna Tuffy  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin North–West", party: "Labour Party",name:"John Lyons   ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin North–West", party: "Labour",name:"John Lyons   ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Fingal", party: "Labour Party",name:"Brendan Ryan ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Fingal", party: "Labour",name:"Brendan Ryan ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Rathdown", party: "Labour Party",name:"Alex White ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Rathdown", party: "Labour",name:"Alex White ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Bay North", party: "Labour Party",name:"Aodhán Ó Riordáin   ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Bay North", party: "Labour",name:"Aodhán Ó Riordáin   ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Bay South", party: "Labour Party",name:"Kevin Humphries   ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Bay South", party: "Labour",name:"Kevin Humphries   ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin South–Central", party: "Labour Party",name:"Eric Byrne  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin South–Central", party: "Labour",name:"Eric Byrne  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Labour Party",name:"Mick Duff", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Labour",name:"Mick Duff", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Labour Party",name:"Pamela Kearns  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Labour",name:"Pamela Kearns  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin West", party: "Labour Party",name:"Joan Burton ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin West", party: "Labour",name:"Joan Burton ", outcome:"won"}),
+(:CANDIDATE {constituency: "Dún Laoghaire", party: "Labour Party",name:"Carrie Smyth  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dún Laoghaire", party: "Labour",name:"Carrie Smyth  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway East", party: "Labour Party",name:"Lorraine Higgins  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway East", party: "Labour",name:"Lorraine Higgins  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Galway West", party: "Labour Party",name:"Derek Nolan ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Galway West", party: "Labour",name:"Derek Nolan ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Kerry", party: "Labour Party",name:"Arthur Spring   ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Kerry", party: "Labour",name:"Arthur Spring   ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Kildare North", party: "Labour Party",name:"Emmett Stagg ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Kildare North", party: "Labour",name:"Emmett Stagg ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kildare South", party: "Labour Party",name:"Mark Wall ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kildare South", party: "Labour",name:"Mark Wall ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Laois", party: "Labour Party",name:"John Whelan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Laois", party: "Labour",name:"John Whelan", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Limerick City", party: "Labour Party",name:"Jan O'Sullivan ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Limerick City", party: "Labour",name:"Jan O'Sullivan ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Longford–Westmeath", party: "Labour Party",name:"Willie Penrose   ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Longford–Westmeath", party: "Labour",name:"Willie Penrose   ", outcome:"won"}),
+(:CANDIDATE {constituency: "Louth", party: "Labour Party",name:"Mary Moran", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Louth", party: "Labour",name:"Mary Moran", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Louth", party: "Labour Party",name:"Gerald Nash   ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Louth", party: "Labour",name:"Gerald Nash   ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Meath East", party: "Labour Party",name:"Dominic Hannigan ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Meath East", party: "Labour",name:"Dominic Hannigan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Roscommon–Galway", party: "Labour Party",name:"John Kelly ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Roscommon–Galway", party: "Labour",name:"John Kelly ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Labour Party",name:"Susan O'Keeffe ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Labour",name:"Susan O'Keeffe ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Tipperary", party: "Labour Party",name:"Alan Kelly   ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Tipperary", party: "Labour",name:"Alan Kelly   ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Waterford", party: "Labour Party",name:"Ciara Conway  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Waterford", party: "Labour",name:"Ciara Conway  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Wexford", party: "Labour Party",name:"Brendan Howlin  ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Wexford", party: "Labour",name:"Brendan Howlin  ", outcome:"won"}),
-
-(:CANDIDATE :OUTGOING{constituency: "Wicklow", party: "Labour",name:"Anne Ferris  ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Wicklow", party: "Labour Party",name:"Anne Ferris  ", outcome:"lost"}),
 
 (:CANDIDATE {constituency: "Clare", party: "Fís Nua",name:"Niamh O'Brien", outcome:"lost"}),
 
 (:CANDIDATE {constituency: "Donegal", party: "Fís Nua",name:"Cordelia Nic Fhearraigh", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–West", party: "Catholic Democrat",name:"Theresa Heaney", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–West", party: "Catholic Democrats",name:"Theresa Heaney", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick City", party: "Catholic Democrat",name:"Nora Bennis ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick City", party: "Catholic Democrats",name:"Nora Bennis ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Catholic Democrat",name:"Noel McKervey ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Catholic Democrats",name:"Noel McKervey ", outcome:"lost"}),
 
 (:CANDIDATE {constituency: "Cork North–Central", party: "People's Convention",name:"Thomas Kiely", outcome:"lost"}),
 
@@ -221,71 +216,71 @@ CREATE
 
 (:CANDIDATE {constituency: "Offaly", party: "Irish Democratic Party",name:"Ken Smollen", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–West", party: "Communist Party of Ireland ",name:"Michael O'Donnell", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–West", party: "Communist Party of Ireland",name:"Michael O'Donnell", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork East", party: "Social Democrat",name:"Ken Curtin ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork East", party: "Social Democrats",name:"Ken Curtin ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay North", party: "Social Democrat",name:"Cian O'Callaghan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay North", party: "Social Democrats",name:"Cian O'Callaghan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay South", party: "Social Democrat",name:"Gleanna Lynch", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay South", party: "Social Democrats",name:"Gleanna Lynch", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Central", party: "Social Democrat",name:"Gary Gannon", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Central", party: "Social Democrats",name:"Gary Gannon", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid–West", party: "Social Democrat",name:"Anne-Marie McNally", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid–West", party: "Social Democrats",name:"Anne-Marie McNally", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING {constituency: "Dublin North–West", party: "Social Democrat",name:"Róisín Shortall ", outcome:"won"}),
+(:CANDIDATE :OUTGOING {constituency: "Dublin North–West", party: "Social Democrats",name:"Róisín Shortall ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin South–Central", party: "Social Democrat",name:"Liam Coyne  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–Central", party: "Social Democrats",name:"Liam Coyne  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Social Democrat",name:"Niall Ó Tuathail ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway West", party: "Social Democrats",name:"Niall Ó Tuathail ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING {constituency: "Kildare North", party: "Social Democrat",name:"Catherine Murphy ", outcome:"won"}),
+(:CANDIDATE :OUTGOING {constituency: "Kildare North", party: "Social Democrats",name:"Catherine Murphy ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Limerick City", party: "Social Democrat",name:"Sarah-Jane Hennelly", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick City", party: "Social Democrats",name:"Sarah-Jane Hennelly", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick ", party: "Social Democrat",name:"James Heffernan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick ", party: "Social Democrats",name:"James Heffernan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath East", party: "Social Democrat",name:"Aisling O'Neill ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath East", party: "Social Democrats",name:"Aisling O'Neill ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Social Democrat",name:"Leonard Kelly  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Social Democrats",name:"Leonard Kelly  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING {constituency: "Wicklow", party: "Social Democrat",name:"Stephen Donnelly ", outcome:"won"}),
+(:CANDIDATE :OUTGOING {constituency: "Wicklow", party: "Social Democrats",name:"Stephen Donnelly ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Direct Democracy Ireland ",name:"Mick McDermott", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Direct Democracy Ireland",name:"Mick McDermott", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Direct Democracy Ireland ",name:"Aoife O'Connell ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Direct Democracy Ireland",name:"Aoife O'Connell ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Central", party: "Direct Democracy Ireland ",name:"Cormac McKay", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Central", party: "Direct Democracy Ireland",name:"Cormac McKay", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid-West ", party: "Direct Democracy Ireland ",name:"Christopher Healy  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid-West ", party: "Direct Democracy Ireland",name:"Christopher Healy  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin North–West", party: "Direct Democracy Ireland ",name:"Cormac McKay", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin North–West", party: "Direct Democracy Ireland",name:"Cormac McKay", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–Central", party: "Direct Democracy Ireland ",name:"Neville Bradley", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–Central", party: "Direct Democracy Ireland",name:"Neville Bradley", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Direct Democracy Ireland ",name:"Stephen Sinclair", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Direct Democracy Ireland",name:"Stephen Sinclair", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dún Laoghaire", party: "Direct Democracy Ireland ",name:"Raymond Whitehead  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dún Laoghaire", party: "Direct Democracy Ireland",name:"Raymond Whitehead  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Direct Democracy Ireland ",name:"Ruairi O'Neill", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway West", party: "Direct Democracy Ireland",name:"Ruairi O'Neill", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick County", party: "Direct Democracy Ireland ",name:"Mark Keogh  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick County", party: "Direct Democracy Ireland",name:"Mark Keogh  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Direct Democracy Ireland ",name:"Stephanie Healy  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Direct Democracy Ireland",name:"Stephanie Healy  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Louth", party: "Direct Democracy Ireland ",name:"Anthony Connor", outcome:"lost"}),
+(:CANDIDATE {constituency: "Louth", party: "Direct Democracy Ireland",name:"Anthony Connor", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Louth", party: "Direct Democracy Ireland ",name:"Pat Greene", outcome:"lost"}),
+(:CANDIDATE {constituency: "Louth", party: "Direct Democracy Ireland",name:"Pat Greene", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath East", party: "Direct Democracy Ireland ",name:"Ben Gilroy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath East", party: "Direct Democracy Ireland",name:"Ben Gilroy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath West", party: "Direct Democracy Ireland ",name:"Alan Lawes ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath West", party: "Direct Democracy Ireland",name:"Alan Lawes ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Waterford", party: "Direct Democracy Ireland ",name:"Edward Quilty  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Waterford", party: "Direct Democracy Ireland",name:"Edward Quilty  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Direct Democracy Ireland ",name:"David Lloyd ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Direct Democracy Ireland",name:"David Lloyd ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wicklow", party: "Direct Democracy Ireland ",name:"Katrina Hutchinson ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wicklow", party: "Direct Democracy Ireland",name:"Katrina Hutchinson ", outcome:"lost"}),
 
 (:CANDIDATE :OUTGOING{constituency: "Carlow–Kilkenny", party: "Fine Gael",name:"Pat Deering ", outcome:"won"}),
 
@@ -545,331 +540,331 @@ CREATE
 
 (:CANDIDATE {constituency: "Wicklow", party: "Green Party",name:"Steven Matthews  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Carlow–Kilkenny", party: "Independent ",name:"Keith Gilligan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Carlow–Kilkenny", party: "Independent",name:"Keith Gilligan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Carlow–Kilkenny", party: "Independent ",name:"Paddy Manning ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Carlow–Kilkenny", party: "Independent",name:"Paddy Manning ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Carlow–Kilkenny", party: "Independent ",name:"Noel G. Walsh ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Carlow–Kilkenny", party: "Independent",name:"Noel G. Walsh ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Cavan–Monaghan", party: "Independent ",name:"Sean Conlan ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Cavan–Monaghan", party: "Independent",name:"Sean Conlan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent ",name:"Jimmy Mee", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent",name:"Jimmy Mee", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent ",name:"Emmet Smith ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent",name:"Emmet Smith ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent ",name:"Mary Smyth ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent",name:"Mary Smyth ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent ",name:"John Wilson", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cavan–Monaghan", party: "Independent",name:"John Wilson", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Clare  ", party: "Independent ",name:"Richard Flynn", outcome:"lost"}),
+(:CANDIDATE {constituency: "Clare  ", party: "Independent",name:"Richard Flynn", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Clare  ", party: "Independent ",name:"Michael Harty ", outcome:"won"}),
+(:CANDIDATE {constituency: "Clare  ", party: "Independent",name:"Michael Harty ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Clare  ", party: "Independent ",name:"Ian Lynch", outcome:"lost"}),
+(:CANDIDATE {constituency: "Clare  ", party: "Independent",name:"Ian Lynch", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Clare  ", party: "Independent ",name:"Dermot Mulqueen ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Clare  ", party: "Independent",name:"Dermot Mulqueen ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Clare  ", party: "Independent ",name:"Ann Norton ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Clare  ", party: "Independent",name:"Ann Norton ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Clare  ", party: "Independent ",name:"André Sibo Hakizimana  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Clare  ", party: "Independent",name:"André Sibo Hakizimana  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork East", party: "Independent ",name:"Paddy Bullman ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork East", party: "Independent",name:"Paddy Bullman ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork East", party: "Independent ",name:"Ross Cannon", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork East", party: "Independent",name:"Ross Cannon", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork East", party: "Independent ",name:"Claire Cullinane", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork East", party: "Independent",name:"Claire Cullinane", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork East", party: "Independent ",name:"Mary Linehan Foley ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork East", party: "Independent",name:"Mary Linehan Foley ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork East", party: "Independent ",name:"Kieran McCarthy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork East", party: "Independent",name:"Kieran McCarthy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–Central", party: "Independent ",name:"Ger Keohane", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–Central", party: "Independent",name:"Ger Keohane", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–Central", party: "Independent ",name:"Mick Murphy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–Central", party: "Independent",name:"Mick Murphy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–Central", party: "Independent ",name:"Peter O'Loughlin ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–Central", party: "Independent",name:"Peter O'Loughlin ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–Central", party: "Independent ",name:"Aislinn Tongue", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–Central", party: "Independent",name:"Aislinn Tongue", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–West", party: "Independent ",name:"Diarmuid O'Flynn ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–West", party: "Independent",name:"Diarmuid O'Flynn ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–West", party: "Independent ",name:"Steven O'Riordan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–West", party: "Independent",name:"Steven O'Riordan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork North–West", party: "Independent ",name:"John Paul O'Shea ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork North–West", party: "Independent",name:"John Paul O'Shea ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–Central", party: "Independent ",name:"Mick Finn ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–Central", party: "Independent",name:"Mick Finn ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–Central", party: "Independent ",name:"Joe Harris ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–Central", party: "Independent",name:"Joe Harris ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–Central", party: "Independent ",name:"Elizabeth Hourihane  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–Central", party: "Independent",name:"Elizabeth Hourihane  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–West", party: "Independent ",name:"Alan Coleman", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–West", party: "Independent",name:"Alan Coleman", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–West", party: "Independent ",name:"Michael Collins", outcome:"won"}),
+(:CANDIDATE {constituency: "Cork South–West", party: "Independent",name:"Michael Collins", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Cork South–West", party: "Independent ",name:"Fiona O'Leary", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–West", party: "Independent",name:"Fiona O'Leary", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Cork South–West", party: "Independent ",name:"Gillian Powell ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Cork South–West", party: "Independent",name:"Gillian Powell ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Peter Casey", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Peter Casey", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Tim Jackson", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Tim Jackson", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Niamh Kennedy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Niamh Kennedy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Frank McBrearty ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Frank McBrearty ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Ian McGarvey", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Ian McGarvey", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Michael Mooney", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Michael Mooney", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Donegal", party: "Independent ",name:"Thomas Pringle ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Donegal", party: "Independent",name:"Thomas Pringle ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Donegal", party: "Independent ",name:"Dessie Shiels ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Donegal", party: "Independent",name:"Dessie Shiels ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Central", party: "Independent ",name:"Christy Burke", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Central", party: "Independent",name:"Christy Burke", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Central", party: "Independent ",name:"William D.J. Gorman", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Central", party: "Independent",name:"William D.J. Gorman", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Central", party: "Independent ",name:"Kerry Guinan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Central", party: "Independent",name:"Kerry Guinan ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Central", party: "Independent ",name:"Maureen O'Sullivan  ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Central", party: "Independent",name:"Maureen O'Sullivan  ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin Central", party: "Independent ",name:"Cieran Perry", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Central", party: "Independent",name:"Cieran Perry", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent ",name:"Patrick Akpoveta", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent",name:"Patrick Akpoveta", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent ",name:"Paul Gogarty", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent",name:"Paul Gogarty", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent ",name:"Haroon Khan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent",name:"Haroon Khan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent ",name:"Clare Leonard ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent",name:"Clare Leonard ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent ",name:"Francis Timmons", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Mid–West", party: "Independent",name:"Francis Timmons", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent ",name:"Marcus de Brún", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent",name:"Marcus de Brún", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Fingal", party: "Independent ",name:"Clare Daly ) ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Fingal", party: "Independents 4 Change",name:"Clare Daly ) ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent ",name:"Roslyn Fuller", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent",name:"Roslyn Fuller", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent ",name:"Tony Murphy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent",name:"Tony Murphy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent ",name:"Fergal O'Connell ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Fingal", party: "Independent",name:"Fergal O'Connell ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Bay North", party: "Independent ",name:"Tommy Broughan  ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Bay North", party: "Independents 4 Change",name:"Tommy Broughan  ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent ",name:"Paul Clarke", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent",name:"Paul Clarke", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent ",name:"Jimmy Guerin ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent",name:"Jimmy Guerin ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Bay North", party: "Independent ",name:"Finan McGrath ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Bay North", party: "Independent",name:"Finan McGrath ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent ",name:"Prionsias Ó Conaráin ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent",name:"Prionsias Ó Conaráin ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent ",name:"Damien O'Neill ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent",name:"Damien O'Neill ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent ",name:"Averil Power", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay North", party: "Independent",name:"Averil Power", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent ",name:"Mannix Flynn ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent",name:"Mannix Flynn ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent ",name:"William D.J. Gorman", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent",name:"William D.J. Gorman", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent ",name:"John Dominic Keigher ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent",name:"John Dominic Keigher ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent ",name:"Alan MacStiofáin ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent",name:"Alan MacStiofáin ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent ",name:"Eoin Tierney", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Bay South", party: "Independent",name:"Eoin Tierney", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin North–West", party: "Independent ",name:"Bernie Hughes  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin North–West", party: "Independent",name:"Bernie Hughes  ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Rathdown", party: "Independent ",name:"Peter Mathews ", outcome:"lost"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Rathdown", party: "Independent",name:"Peter Mathews ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin Rathdown", party: "Independent ",name:"Patrick O'Connell ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin Rathdown", party: "Independent",name:"Patrick O'Connell ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin Rathdown", party: "Independent ",name:"Shane Ross ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin Rathdown", party: "Independent",name:"Shane Ross ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Dublin South–Central", party: "Independent ",name:"Joan Collins  ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Dublin South–Central", party: "Independents 4 Change",name:"Joan Collins  ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin South–Central", party: "Independent ",name:"Paul Hand ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–Central", party: "Independent",name:"Paul Hand ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–Central", party: "Independent ",name:"Richard Murray", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–Central", party: "Independent",name:"Richard Murray", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Declan Burke", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Declan Burke", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Peter Fitzpatrick ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Peter Fitzpatrick ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Eamonn Maloney ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Eamonn Maloney ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Deirdre O'Donovan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Deirdre O'Donovan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Frank O'Gorman ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Frank O'Gorman ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Kieran Adam Quigley", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Kieran Adam Quigley", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Joan Summerville-Molloy ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Joan Summerville-Molloy ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin South–West", party: "Independent ",name:"Katherine Zappone", outcome:"won"}),
+(:CANDIDATE {constituency: "Dublin South–West", party: "Independent",name:"Katherine Zappone", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Dublin West", party: "Independent ",name:"Dermot Casey ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin West", party: "Independent",name:"Dermot Casey ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin West", party: "Independent ",name:"T.J. Clare", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin West", party: "Independent",name:"T.J. Clare", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin West", party: "Independent ",name:"David McGuinness ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin West", party: "Independent",name:"David McGuinness ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dublin West", party: "Independent ",name:"Lorna Nolan  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dublin West", party: "Independent",name:"Lorna Nolan  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Dún Laoghaire", party: "Independent ",name:"Carol Hunt  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Dún Laoghaire", party: "Independent",name:"Carol Hunt  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway East", party: "Independent ",name:"Sean Canney", outcome:"won"}),
+(:CANDIDATE {constituency: "Galway East", party: "Independent",name:"Sean Canney", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Galway East", party: "Independent ",name:"Michael Fahy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway East", party: "Independent",name:"Michael Fahy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Independent ",name:"James Charity ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway West", party: "Independent",name:"James Charity ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Independent ",name:"Catherine Connolly", outcome:"won"}),
+(:CANDIDATE {constituency: "Galway West", party: "Independent",name:"Catherine Connolly", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Independent ",name:"Mike Cubbard", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway West", party: "Independent",name:"Mike Cubbard", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Galway West", party: "Independent ",name:"Noel Grealish ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Galway West", party: "Independent",name:"Noel Grealish ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Independent ",name:"Fidelma Healy-Eames", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway West", party: "Independent",name:"Fidelma Healy-Eames", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Galway West", party: "Independent ",name:"Tommy Roddy ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Galway West", party: "Independent",name:"Tommy Roddy ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kerry", party: "Independent ",name:"Mary E. Fitzgibbon", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kerry", party: "Independent",name:"Mary E. Fitzgibbon", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kerry", party: "Independent ",name:"Henry Gaynor", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kerry", party: "Independent",name:"Henry Gaynor", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kerry", party: "Independent ",name:"Danny Healy-Rae ", outcome:"won"}),
+(:CANDIDATE {constituency: "Kerry", party: "Independent",name:"Danny Healy-Rae ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Kerry", party: "Independent ",name:"Michael Healy-Rae ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Kerry", party: "Independent",name:"Michael Healy-Rae ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Kerry", party: "Independent ",name:"Kevin Murphy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kerry", party: "Independent",name:"Kevin Murphy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kerry", party: "Independent ",name:"Michael O'Gorman ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kerry", party: "Independent",name:"Michael O'Gorman ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kildare North", party: "Independent ",name:"Michael Beirne", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kildare North", party: "Independent",name:"Michael Beirne", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kildare North", party: "Independent ",name:"Gerard Dunne", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kildare North", party: "Independent",name:"Gerard Dunne", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kildare North", party: "Independent ",name:"Elizabeth O'Sullivan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kildare North", party: "Independent",name:"Elizabeth O'Sullivan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kildare North", party: "Independent ",name:"Brendan Young", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kildare North", party: "Independent",name:"Brendan Young", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Kildare South", party: "Independent ",name:"Declan Crowe", outcome:"lost"}),
+(:CANDIDATE {constituency: "Kildare South", party: "Independent",name:"Declan Crowe", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick City", party: "Independent ",name:"Desmond Hayes", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick City", party: "Independent",name:"Desmond Hayes", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick City", party: "Independent ",name:"Denis Riordan  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick City", party: "Independent",name:"Denis Riordan  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick ", party: "Independent ",name:"Emmett O'Brien ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick ", party: "Independent",name:"Emmett O'Brien ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick ", party: "Independent ",name:"Richard O'Donoghue", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick ", party: "Independent",name:"Richard O'Donoghue", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Limerick ", party: "Independent ",name:"John O'Gorman ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Limerick ", party: "Independent",name:"John O'Gorman ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"Brian Fagan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"Brian Fagan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"Donal Jackson ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"Donal Jackson ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"Frank Kilbride", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"Frank Kilbride", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"James Miller ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"James Miller ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"Kevin Moran", outcome:"won"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"Kevin Moran", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"James Morgan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"James Morgan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"Mae Sexton ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"Mae Sexton ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent ",name:"Barbara Smyth ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Longford–Westmeath", party: "Independent",name:"Barbara Smyth ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Louth", party: "Independent ",name:"David Bradley ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Louth", party: "Independent",name:"David Bradley ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Louth", party: "Independent ",name:"Kevin Callan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Louth", party: "Independent",name:"Kevin Callan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Louth", party: "Independent ",name:"Maeve Yore ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Louth", party: "Independent",name:"Maeve Yore ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"Jerry Cowley", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"Jerry Cowley", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"Seán Forkan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"Seán Forkan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"Peter Jordan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"Peter Jordan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"Stephen Manning ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"Stephen Manning ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"Gerry O'Boyle", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"Gerry O'Boyle", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"George O'Malley", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"George O'Malley", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Mayo", party: "Independent ",name:"Kamal Uddin ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Mayo", party: "Independent",name:"Kamal Uddin ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath East", party: "Independent ",name:"Joe Bonner ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath East", party: "Independent",name:"Joe Bonner ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath East", party: "Independent ",name:"Sharon Keogan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath East", party: "Independent",name:"Sharon Keogan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath West  ", party: "Independent ",name:"Trevor Golden ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath West  ", party: "Independent",name:"Trevor Golden ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Meath West  ", party: "Independent ",name:"John Malone  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Meath West  ", party: "Independent",name:"John Malone  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Offaly", party: "Independent ",name:"Kate Bopp", outcome:"lost"}),
+(:CANDIDATE {constituency: "Offaly", party: "Independent",name:"Kate Bopp", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Offaly", party: "Independent ",name:"John Foley ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Offaly", party: "Independent",name:"John Foley ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Offaly", party: "Independent ",name:"Joe Hannigan", outcome:"lost"}),
+(:CANDIDATE {constituency: "Offaly", party: "Independent",name:"Joe Hannigan", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Offaly", party: "Independent ",name:"Teresa Ryan-Feehan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Offaly", party: "Independent",name:"Teresa Ryan-Feehan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Roscommon–Galway", party: "Independent ",name:"Tony Coleman", outcome:"lost"}),
+(:CANDIDATE {constituency: "Roscommon–Galway", party: "Independent",name:"Tony Coleman", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Roscommon–Galway", party: "Independent ",name:"Thomas Declan Fallon", outcome:"lost"}),
+(:CANDIDATE {constituency: "Roscommon–Galway", party: "Independent",name:"Thomas Declan Fallon", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Roscommon–Galway", party: "Independent ",name:"Michael Fitzmaurice ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Roscommon–Galway", party: "Independent",name:"Michael Fitzmaurice ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Roscommon–Galway", party: "Independent ",name:"Denis Naughten  ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Roscommon–Galway", party: "Independent",name:"Denis Naughten  ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Declan Bree ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Declan Bree ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Marie Casserly", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Marie Casserly", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Des Guckian", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Des Guckian", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Bernie O'Hara", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Bernie O'Hara", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Eamon Murray ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Eamon Murray ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Gary Smylie", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Gary Smylie", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent ",name:"Bernard Sweeney ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Sligo–Leitrim", party: "Independent",name:"Bernard Sweeney ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Tipperary", party: "Independent ",name:"Michael Dillon", outcome:"lost"}),
+(:CANDIDATE {constituency: "Tipperary", party: "Independent",name:"Michael Dillon", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Tipperary", party: "Independent ",name:"Michael Lowry ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Tipperary", party: "Independent",name:"Michael Lowry ", outcome:"won"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Tipperary", party: "Independent ",name:"Mattie McGrath  ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Tipperary", party: "Independent",name:"Mattie McGrath  ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Waterford", party: "Independent ",name:"Shiekh M Ahmed", outcome:"lost"}),
+(:CANDIDATE {constituency: "Waterford", party: "Independent",name:"Shiekh M Ahmed", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Waterford", party: "Independent ",name:"John Halligan ", outcome:"won"}),
+(:CANDIDATE :OUTGOING{constituency: "Waterford", party: "Independent",name:"John Halligan ", outcome:"won"}),
 
-(:CANDIDATE {constituency: "Waterford", party: "Independent ",name:"John Walsh ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Waterford", party: "Independent",name:"John Walsh ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Independent ",name:"Breda Cahill", outcomewe:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Independent",name:"Breda Cahill", outcomewe:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Independent ",name:"Ger Carthy", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Independent",name:"Ger Carthy", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Independent ",name:"Caroline Foxe ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Independent",name:"Caroline Foxe ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Independent ",name:"Emmet Moloney ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Independent",name:"Emmet Moloney ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wexford", party: "Independent ",name:"Paul O'Hanlon  ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wexford", party: "Independent",name:"Paul O'Hanlon  ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wicklow", party: "Independent ",name:"Joe Behan ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wicklow", party: "Independent",name:"Joe Behan ", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wicklow", party: "Independent ",name:"Bob Kearns", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wicklow", party: "Independent",name:"Bob Kearns", outcome:"lost"}),
 
-(:CANDIDATE {constituency: "Wicklow", party: "Independent ",name:"Charlie Keddy ", outcome:"lost"}),
+(:CANDIDATE {constituency: "Wicklow", party: "Independent",name:"Charlie Keddy ", outcome:"lost"}),
 
 (:CANDIDATE :OUTGOING{constituency: "Carlow–Kilkenny", party: "Fianna Fáil",name:"Bobby Aylward ", outcome:"won"}),
 
@@ -1227,7 +1222,4 @@ CREATE
 
 (:CANDIDATE :OUTGOING{constituency: "Wicklow", party: "Renua Ireland",name:"Billy Timmins ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Wexford", party: "Independent",name:"Mick Wallace", outcome:"won"})
-
-//Labour, Communist, AAA, Ind 4 Change, Soc Dems, Direct Dems, Catholic Dems, Irish dems, Identity, Ind Alliance, Ceann Comhairle
-//All have naming issues compared to the candidates
+(:CANDIDATE :OUTGOING{constituency: "Wexford", party: "Independents 4 Change",name:"Mick Wallace", outcome:"won"})
