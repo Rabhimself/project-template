@@ -1167,7 +1167,6 @@ CREATE
 
 (:CANDIDATE {constituency: "Waterford ", party: "Renua Ireland",name:"Mailo Power ", outcome:"lost"}),
 
-(:CANDIDATE :OUTGOING{constituency: "Wicklow ", party: "Renua Ireland",name:"Billy Timmins ", outcome:"lost"})
+(:CANDIDATE :OUTGOING{constituency: "Wicklow ", party: "Renua Ireland",name:"Billy Timmins ", outcome:"lost"}),
 
-
-MICK WALLACE IS MISSING?
+(:CANDIDATE :OUTGOING{constituency: "Wexford ", party: "Independent",name:"Mick Wallace", outcome:"won"})
