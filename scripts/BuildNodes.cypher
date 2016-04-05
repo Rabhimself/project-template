@@ -1,120 +1,120 @@
 CREATE
 
-(:CONSTITUENCY{name:"Carlow–Kilkenny",population:"145,659",seats:"5"}),
+(:CONSTITUENCY{name:"Carlow–Kilkenny", population:145659, seats:5,electors:105977,turnout:74926,quota:12488}),
 
-(:CONSTITUENCY{name:"Cavan–Monaghan",population:"120,483",seats:"4"}),
+(:CONSTITUENCY{name:"Cavan–Monaghan", population:120483, seats:4,electors:89784,turnout:65273,quota:13055}),
 
-(:CONSTITUENCY{name:"Clare",population:"111,336",seats:"4"}),
+(:CONSTITUENCY{name:"Clare", population:111336, seats:4,electors:82965,turnout:58656,quota:11731}),
 
-(:CONSTITUENCY{name:"Cork East",population:"114,365",seats:"4"}),
+(:CONSTITUENCY{name:"Cork East", population:114365, seats:4,electors:82566,turnout:56723,quota:11345}),
 
-(:CONSTITUENCY{name:"Cork North–Central",population:"117,170",seats:"4"}),
+(:CONSTITUENCY{name:"Cork North–Central", population:117170, seats:4,electors:80899,turnout:56629,quota:11326}),
 
-(:CONSTITUENCY{name:"Cork North–West",population:"86,593",seats:"3"}),
+(:CONSTITUENCY{name:"Cork North–West", population:86593, seats:3,electors:67116,turnout:49330,quota:12333}),
 
-(:CONSTITUENCY{name:"Cork South–Central",population:"117,952",seats:"4"}),
+(:CONSTITUENCY{name:"Cork South–Central", population:117952, seats:4,electors:83480,turnout:58937,quota:11787}),
 
-(:CONSTITUENCY{name:"Cork South–West",population:"82,952",seats:"3"}),
+(:CONSTITUENCY{name:"Cork South–West", population:82952, seats:3,electors:62917,turnout:46621,quota:11655}),
 
-(:CONSTITUENCY{name:"Donegal",population:"152,358",seats:"5"}),
+(:CONSTITUENCY{name:"Donegal", population:152358, seats:5,electors:116680,turnout:77242,quota:12874}),
 
-(:CONSTITUENCY{name:"Dublin Bay North",population:"146,512",seats:"5"}),
+(:CONSTITUENCY{name:"Dublin Bay North", population:146512, seats:5,electors:106548,turnout:77780,quota:12963}),
 
-(:CONSTITUENCY{name:"Dublin Bay South",population:"116,396",seats:"4"}),
+(:CONSTITUENCY{name:"Dublin Bay South", population:116396, seats:4,electors:68729,turnout:41581,quota:8316}),
 
-(:CONSTITUENCY{name:"Dublin Central",population:"89,030",seats:"3"}),
+(:CONSTITUENCY{name:"Dublin Central", population:89030, seats:3,electors:41604,turnout:25628,quota:6407}),
 
-(:CONSTITUENCY{name:"Dublin Fingal",population:"141,162",seats:"5"}),
+(:CONSTITUENCY{name:"Dublin Fingal", population:141162, seats:5,electors:92895,turnout:65677,quota:10946}),
 
-(:CONSTITUENCY{name:"Dublin Mid–West",population:"110,427",seats:"4"}),
+(:CONSTITUENCY{name:"Dublin Mid–West", population:110427, seats:4,electors:68940,turnout:45500,quota:9100}),
 
-(:CONSTITUENCY{name:"Dublin North–West",population:"90,534",seats:"3"}),
+(:CONSTITUENCY{name:"Dublin North–West", population:90534, seats:3,electors:58113,turnout:39226,quota:9807}),
 
-(:CONSTITUENCY{name:"Dublin Rathdown",population:"87,470",seats:"3"}),
+(:CONSTITUENCY{name:"Dublin Rathdown", population:87470, seats:3,electors:61500,turnout:43911,quota:10978}),
 
-(:CONSTITUENCY{name:"Dublin South–Central",population:"114,660",seats:"4"}),
+(:CONSTITUENCY{name:"Dublin South–Central", population:114660, seats:4,electors:71385,turnout:46043,quota:9209}),
 
-(:CONSTITUENCY{name:"Dublin South–West",population:"144,908",seats:"5"}),
+(:CONSTITUENCY{name:"Dublin South–West", population:144908, seats:5,electors:104819,turnout:70438,quota:11740}),
 
-(:CONSTITUENCY{name:"Dublin West",population:"113,179",seats:"4"}),
+(:CONSTITUENCY{name:"Dublin West", population:113179, seats:4,electors:64180,turnout:44027,quota:8805}),
 
-(:CONSTITUENCY{name:"Dún Laoghaire",population:"118,791",seats:"4"}),
+(:CONSTITUENCY{name:"Dún Laoghaire", population:118791, seats:4,electors:90949,turnout:64847,quota:16212}),
 
-(:CONSTITUENCY{name:"Galway East",population:"89,564",seats:"3"}),
+(:CONSTITUENCY{name:"Galway East", population:89564, seats:3,electors:68011,turnout:48628,quota:12157}),
 
-(:CONSTITUENCY{name:"Galway West",population:"150,874",seats:"5"}),
+(:CONSTITUENCY{name:"Galway West", population:150874, seats:5,electors:99290,turnout:68510,quota:11418}),
 
-(:CONSTITUENCY{name:"Kerry",population:"145,502",seats:"5"}),
+(:CONSTITUENCY{name:"Kerry", population:145502, seats:5,electors:111942,turnout:82389,quota:13732}),
 
-(:CONSTITUENCY{name:"Kildare North",population:"115,350",seats:"4"}),
+(:CONSTITUENCY{name:"Kildare North", population:115350, seats:4,electors:76835,turnout:50865,quota:10173}),
 
-(:CONSTITUENCY{name:"Kildare South",population:"115,350",seats:"3"}),
+(:CONSTITUENCY{name:"Kildare South", population:115350, seats:3,electors:58673,turnout:38489,quota:9622}),
 
-(:CONSTITUENCY{name:"Laois",population:"87,745",seats:"3"}),
+(:CONSTITUENCY{name:"Laois", population:87745, seats:3,electors:62834,turnout:43732,quota:10933}),
 
-(:CONSTITUENCY{name:"Limerick City",population:"113,835",seats:"4"}),
+(:CONSTITUENCY{name:"Limerick City", population:113835, seats:4,electors:74950,turnout:50366,quota:10073}),
 
-(:CONSTITUENCY{name:"Limerick County",population:"83,834",seats:"3"}),
+(:CONSTITUENCY{name:"Limerick County", population:83834, seats:3,electors:67002,turnout:46834,quota:11709}),
 
-(:CONSTITUENCY{name:"Longford–Westmeath",population:"116,802",seats:"4"}),
+(:CONSTITUENCY{name:"Longford–Westmeath", population:116802, seats:4,electors:88247,turnout:59743,quota:11949}),
 
-(:CONSTITUENCY{name:"Louth",population:"143,272",seats:"5"}),
+(:CONSTITUENCY{name:"Louth", population:143272, seats:5,electors:104198,turnout:73460,quota:12243}),
 
-(:CONSTITUENCY{name:"Mayo",population:"120,332",seats:"4"}),
+(:CONSTITUENCY{name:"Mayo", population:120332, seats:4,electors:92257,turnout:68178,quota:13636}),
 
-(:CONSTITUENCY{name:"Meath East",population:"86,572",seats:"3"}),
+(:CONSTITUENCY{name:"Meath East", population:86572, seats:3,electors:64931,turnout:43114,quota:10779}),
 
-(:CONSTITUENCY{name:"Meath West",population:"85,550",seats:"3"}),
+(:CONSTITUENCY{name:"Meath West", population:85550, seats:3,electors:64070,turnout:41453,quota:10363}),
 
-(:CONSTITUENCY{name:"Offaly",population:"87,640",seats:"3"}),
+(:CONSTITUENCY{name:"Offaly", population:87640, seats:3,electors:64892,turnout:45165,quota:11291}),
 
-(:CONSTITUENCY{name:"Roscommon–Galway",population:"84,586",seats:"3"}),
+(:CONSTITUENCY{name:"Roscommon–Galway", population:84586, seats:3,electors:63888,turnout:50280,quota:12570}),
 
-(:CONSTITUENCY{name:"Sligo–Leitrim",population:"119,153",seats:"4"}),
+(:CONSTITUENCY{name:"Sligo–Leitrim", population:119153, seats:4,electors:94922,turnout:67110,quota:13422}),
 
-(:CONSTITUENCY{name:"Tipperary",population:"147,801",seats:"5"}),
+(:CONSTITUENCY{name:"Tipperary", population:147801, seats:5,electors:111055,turnout:83402,quota:13900}),
 
-(:CONSTITUENCY{name:"Waterford",population:"113,795",seats:"4"}),
+(:CONSTITUENCY{name:"Waterford", population:113795, seats:4,electors:81360,turnout:56301,quota:11260}),
 
-(:CONSTITUENCY{name:"Wexford",population:"145,320",seats:"5"}),
+(:CONSTITUENCY{name:"Wexford", population:145320, seats:5,electors:108877,turnout:74798,quota:12466}),
 
-(:CONSTITUENCY{name:"Wicklow",population:"141,012",seats:"5"}),
+(:CONSTITUENCY{name:"Wicklow", population:141012, seats:5,electors:97381,turnout:72841,quota:12140}),
 
-(:PARTY {name:"Fine Gael", leader:"Enda Kenny",first_pref_votes:"544,140",first_pref_votes_per:"25.5",swing:"-10.6",candidates:"88",elected_2011:"76",outgoing:"66",elected:"49",change:"-27",seats_per:"31.6"}),
+(:PARTY {name:"Fine Gael", leader:"Enda Kenny", first_pref_votes:544140, first_pref_votes_per:25.5, swing:-10.6, candidates:88, elected_2011:76, outgoing:66, elected:49, change:-27, seats_per:31.6}),
 
-(:PARTY {name:"Fianna Fáil", leader:"Micheál Martin",first_pref_votes:"519,356",first_pref_votes_per:"24.3",swing:"6.9",candidates:"71",elected_2011:"19",outgoing:"21",elected:"44",change:"25",seats_per:"27.8"}),
+(:PARTY {name:"Fianna Fáil", leader:"Micheál Martin", first_pref_votes:519356, first_pref_votes_per:24.3, swing:6.9, candidates:71, elected_2011:19, outgoing:21, elected:44, change:25, seats_per:27.8}),
 
-(:PARTY {name:"Sinn Féin", leader:"Gerry Adams",first_pref_votes:"295,319",first_pref_votes_per:"13.8",swing:"3.9",candidates:"50",elected_2011:"14",outgoing:"14",elected:"23",change:"9",seats_per:"14.6"}),
+(:PARTY {name:"Sinn Féin", leader:"Gerry Adams", first_pref_votes:295319, first_pref_votes_per:13.8, swing:3.9, candidates:50, elected_2011:14, outgoing:14, elected:23, change:9, seats_per:14.6}),
 
-(:PARTY {name:"Labour Party", leader:"Joan Burton",first_pref_votes:"140,898",first_pref_votes_per:"6.6",swing:"-12.8",candidates:"36",elected_2011:"37",outgoing:"33",elected:"7",change:"-30",seats_per:"4.4"}),
+(:PARTY {name:"Labour Party", leader:"Joan Burton", first_pref_votes:140898, first_pref_votes_per:6.6, swing:-12.8, candidates:36, elected_2011:37, outgoing:33, elected:7, change:-30, seats_per:4.4}),
 
-(:PARTY {name:"Anti-Austerity Alliance–People Before Profit", leader:"None",first_pref_votes:"84,168",first_pref_votes_per:"3.9",swing:"1.7",candidates:"31",elected_2011:"4",outgoing:"4",elected:"6",change:"-2",seats_per:"3.8"}),
+(:PARTY {name:"Anti-Austerity Alliance–People Before Profit", leader:"None", first_pref_votes:84168, first_pref_votes_per:3.9, swing:1.7, candidates:31, elected_2011:4, outgoing:4, elected:6, change:-2, seats_per:3.8}),
 
-(:PARTY {name:"Independents 4 Change", leader:"None",first_pref_votes:"31,365",first_pref_votes_per:"1.5",swing:"1.5",candidates:"5",elected_2011:"N/A",outgoing:"4",elected:"4",change:"4",seats_per:"2.5"}),
+(:PARTY {name:"Independents 4 Change", leader:"None", first_pref_votes:31365, first_pref_votes_per:1.5, swing:1.5, candidates:5, elected_2011:0, outgoing:4, elected:4, change:4, seats_per:2.5}),
 
-(:PARTY {name:"Social Democrats", leader:"Catherine Murphy, Stephen Donnelly, Róisín Shortall",first_pref_votes:"64,094",first_pref_votes_per:"3",swing:"3",candidates:"14",elected_2011:"N/A",outgoing:"3",elected:"3",change:"3",seats_per:"1.9"}),
+(:PARTY {name:"Social Democrats", leader:"Catherine Murphy Stephen Donnelly Róisín Shortall", first_pref_votes:64094, first_pref_votes_per:3, swing:3, candidates:14, elected_2011:0, outgoing:3, elected:3, change:3, seats_per:1.9}),
 
-(:PARTY {name:"Green Party", leader:"Eamon Ryan",first_pref_votes:"57,999",first_pref_votes_per:"2.7",swing:"0.9",candidates:"40",elected_2011:"0",outgoing:"0",elected:"2",change:"2",seats_per:"1.3"}),
+(:PARTY {name:"Green Party", leader:"Eamon Ryan", first_pref_votes:57999, first_pref_votes_per:2.7, swing:0.9, candidates:40, elected_2011:0, outgoing:0, elected:2, change:2, seats_per:1.3}),
 
-(:PARTY {name:"Renua Ireland", leader:"Lucinda Creighton",first_pref_votes:"46,552",first_pref_votes_per:"2.2",swing:"2.2",candidates:"26",elected_2011:"N/A",outgoing:"3",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Renua Ireland", leader:"Lucinda Creighton", first_pref_votes:46552, first_pref_votes_per:2.2, swing:2.2, candidates:26, elected_2011:0, outgoing:3, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Direct Democracy Ireland", leader:"Pat Greene",first_pref_votes:"6,481",first_pref_votes_per:"0.3",swing:"0.3",candidates:"19",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Direct Democracy Ireland", leader:"Pat Greene", first_pref_votes:6481, first_pref_votes_per:0.3, swing:0.3, candidates:19, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Workers' Party", leader:"Michael Donnelly",first_pref_votes:"3,242",first_pref_votes_per:"0.2",swing:"<0.05",candidates:"5",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Workers' Party", leader:"Michael Donnelly", first_pref_votes:3242, first_pref_votes_per:0.2, swing:0.05, candidates:5, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Catholic Democrats", leader:"Nora Bennis",first_pref_votes:"2,013",first_pref_votes_per:"0.1",swing:"0.1",candidates:"3",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Catholic Democrats", leader:"Nora Bennis", first_pref_votes:2013, first_pref_votes_per:0.1, swing:0.1, candidates:3, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Fís Nua", leader:"None",first_pref_votes:"1,224",first_pref_votes_per:"0.1",swing:"<0.05",candidates:"2",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Fís Nua", leader:"None", first_pref_votes:1224, first_pref_votes_per:0.1, swing:0.05, candidates:2, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Irish Democratic Party", leader:"Ken Smollen",first_pref_votes:"971",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Irish Democratic Party", leader:"Ken Smollen", first_pref_votes:971, first_pref_votes_per:0.05, swing:0.05, candidates:1, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Communist Party of Ireland", leader:"Lynda Walker",first_pref_votes:"185",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"0",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Communist Party of Ireland", leader:"Lynda Walker", first_pref_votes:185, first_pref_votes_per:0.05, swing:0.05, candidates:1, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Identity Ireland", leader:"Peter O'Loughlin",first_pref_votes:"183",first_pref_votes_per:"<0.05",swing:"<0.05",candidates:"1",elected_2011:"N/A",outgoing:"0",elected:"0",change:"0",seats_per:"0"}),
+(:PARTY {name:"Identity Ireland", leader:"Peter O'Loughlin", first_pref_votes:183, first_pref_votes_per:0.05, swing:0.05, candidates:1, elected_2011:0, outgoing:0, elected:0, change:0, seats_per:0}),
 
-(:PARTY {name:"Independent Alliance", leader:"None",first_pref_votes:"88,930",first_pref_votes_per:"4.2",swing:"4.2",candidates:"21",elected_2011:"N/A",outgoing:"5",elected:"6",change:"-6",seats_per:"3.8"}),
+(:PARTY {name:"Independent Alliance", leader:"None", first_pref_votes:88930, first_pref_votes_per:4.2, swing:4.2, candidates:21, elected_2011:0, outgoing:5, elected:6, change:-6, seats_per:3.8}),
 
-(:PARTY {name:"Independent", leader:"—",first_pref_votes:"249,285",first_pref_votes_per:"11.7",swing:"1.3",candidates:"136",elected_2011:"14",outgoing:"10",elected:"13",change:"-1",seats_per:"8.2"}),
+(:PARTY {name:"Independent", leader:"—", first_pref_votes:249285, first_pref_votes_per:11.7, swing:1.3, candidates:136, elected_2011:14, outgoing:10, elected:13, change:-1, seats_per:8.2}),
 
 (:CANDIDATE :OUTGOING{constituency: "Carlow–Kilkenny", party: "Labour Party",name:"Ann Phelan ", outcome:"lost"}),
 
