@@ -2,12 +2,12 @@
 ###### Robert Bryant, G00317412
 
 ## Introduction
-This project serves as an introduction to Neo4j, part of the Graph Theory module. The database describes the Irish General Election of 2016, the data itself is comprised of publicly available information(sources are referenced in this readme). You can find the scripts to replicate the database in the Scripts folder, along with 3 queries that provide interesting or key information about the election. These 3 queries are described in this Readme as well.
+This project serves as an introduction to Neo4j, a part of the Graph Theory module. This project was forked from the original project spec and is not part of any ongoing development of software. The project required we design and build a Neo4j database describing the Irish 2016 General Election, as well as provide 3 queries that yield interesting information or insights into the election.
 
 ## Database
-The database consists of 3 node types; Constituency, Candidate, and Party. The data that was used to populate the database was found through various websites[2][3]. 
+The database consists of 3 node types; Constituency, Candidate, and Party. The data that was used to populate the database was found on the internet, and was not provided in the project spec. The database focuses more so on meta data rather than the candidates themselves. Party affiliation (particularily in the case of independents) is tied to which party the candidate ran under. For example, if a candidate was a member of an Independent organization, but did not run under the organization's name, the candidate is listed as an Independent rather than as a member of the organization. You can find the scripts to replicate the database in the Scripts folder, along with the 3 queries that provide interesting or key information about the election.
 
-The 3 node types are described as so:
+The 3 node types are described as such:
 
 ######Constituency
 ```cypher
@@ -21,6 +21,16 @@ The 3 node types are described as so:
 	quota:11326
 }
 ```
+
+| Property   | Description                                                   |
+|------------|---------------------------------------------------------------|
+| Name       | The constituency's name                                       |
+| Population | Est. population of the constituency                           |
+| Seats      | The number of seats available to the constituency             |
+| Electors   | Est. number of eligible voters in the constituency            |
+| Turnout    | Est. number of votes cast in the constituency                 |
+| Quota      | Number of votes needed to win a seat in the constituency      |
+
 #####Party 
 ```cypher
 :PARTY
@@ -38,6 +48,19 @@ The 3 node types are described as so:
 	seats_per:31.6
 }
 ```
+| Property             | Description                                                                  |
+|----------------------|------------------------------------------------------------------------------|
+| name                 | The party's name                                                             |
+| leader               | The current party leader                                                     |
+| first_pref_votes     | Total number of first preference votes earned by the candidates in the party |
+| first_pref_votes_per | Percentage of first preference votes earned by candidates in the party       |
+| swing                | Change in voter support                                                      |
+| candidates           | Number of candidates in the party running in the 2016 election               |
+| elected_2011         | Number of candidates elected in 2011                                         |
+| outgoing             | TD's in the party at the dissolution of the 31st Dail                        |
+| elected              | Number of candidates elected in the 2016 election                            |
+| change               | Number of seats won/lost since the 2011 election                             |
+| seats_per            | Percentage of seats held by the party                                        |
 
 #####Candidate
 ```cypher
@@ -50,6 +73,12 @@ The 3 node types are described as so:
 	outcome:"won"
 }
 ```	
+| Property              | Description                                  |
+|-----------------------|----------------------------------------------|
+| constituency: "Mayo", | The constituency the candidate is running in |
+| party: "Fine Gael",   | The party the candidate is a member of       |
+| name:"Enda Kenny ",   | Candidates name                              |
+| outcome:"won"         | Whether or not the candidate was elected     |
 
 ## Queries
 
