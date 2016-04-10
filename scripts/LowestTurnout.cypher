@@ -1,6 +1,4 @@
-// Describe your query
-// at the start
-// in comments.
+//This query will return the constituency with the lowest turnout rate.
 
 MATCH (c:CONSTITUENCY)
 WITH min((toFloat(c.turnout) / toFloat(c.electors)) * 100) as m
