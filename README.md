@@ -1,8 +1,8 @@
-# Irish Constituencies Neo4j Database
+# Irish General Election 2016, Neo4j Database
 ###### Robert Bryant, G00317412
 
 ## Introduction
-Give a summary here of what your project is about.
+This project serves as an introduction to Neo4j, part of the Graph Theory module. The database describes the Irish General Election of 2016, the data itself is comprised of publicly available information(sources are referenced in this readme). You can find the scripts to replicate the database in the Scripts folder, along with 3 queries that provide interesting or key information about the election. These 3 queries are described in this Readme as well.
 
 ## Database
 The database consists of 3 node types; Constituency, Candidate, and Party. The data that was used to populate the database was found through various websites[2][3]. 
@@ -52,11 +52,9 @@ The 3 node types are described as so:
 ```	
 
 ## Queries
-Summarise your three queries here.
-Then explain them one by one in the following sections.
 
 #### List Election Winners and Their Respective Constituencies
-This query retreives each constituency and their new representatives.
+This query retrieves each constituency and their new representatives.
 ```cypher
 MATCH (c:CANDIDATE {outcome : "won"}), (C:CONSTITUENCY)
 WHERE c.constituency = C.name
@@ -64,7 +62,7 @@ RETURN c, C;
 ```
 
 #### Show the Constituency with the Lowest Turnout Rate
-This query retreives the Bacon number of an actor...
+This query will return the constituency with the lowest turnout rate.
 ```cypher
 MATCH (c:CONSTITUENCY)
 WITH min((toFloat(c.turnout) / toFloat(c.electors)) * 100) as m
@@ -83,7 +81,7 @@ RETURN C, m;
 ```
 
 #### Display Every Outgoing(Incumbent) Candidate Who Lost Their Seat
-This query retreives the Bacon number of an actor...
+This query will list every representative that was challenged and defeated in the election.
 ```cypher
 MATCH (C :OUTGOING{outcome:"lost"}), (c :CONSTITUENCY)
 WHERE C.constituency = c.name
